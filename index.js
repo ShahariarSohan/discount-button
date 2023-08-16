@@ -3,8 +3,7 @@ document.getElementById('btn').addEventListener('click',function(){
     const couponString =coupon.value
     const couponCode =parseFloat(couponString)
     if(couponString.length===0){
-        const heading =document.getElementById('heading')
-        heading.innerText='আপনার কুপনটি জমা দিন' 
+       alert ("আপনার কুপনটি জমা দিন")
     }
     else if(couponCode === 30){
     const discountString =.3;
@@ -13,7 +12,7 @@ document.getElementById('btn').addEventListener('click',function(){
     const taka = parseFloat(takaString);
     const discountPrice = taka*discount;
     const newPrice = taka - discountPrice;
-    document.getElementById('offerprice').innerText=newPrice;
+    document.getElementById('heading').innerText='ডিসকাউন্ট মূল্য - '+ newPrice + ' টাকা';
     }
     else{
         const heading =document.getElementById('heading')
